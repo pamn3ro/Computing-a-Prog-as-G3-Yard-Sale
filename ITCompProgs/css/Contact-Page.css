@@ -1,0 +1,163 @@
+  @font-face {
+                  font-family: 'CookieRun';
+                  src: url('fonts/CookieRun Regular.otf') format('opentype');
+                  font-weight: 400;
+                  font-style: normal;
+                  font-display: swap; 
+            }
+
+  @font-face {
+                  font-family: 'CookieRun';
+                  src: url('fonts/CookieRun Bold.otf') format('opentype');
+                  font-weight: 700;
+                  font-style: normal;
+                  font-display: swap;
+            }
+
+  @font-face {
+                  font-family: 'CookieRun';
+                  src: url('fonts/CookieRun Black.otf') format('opentype');
+                  font-weight: 900;
+                  font-style: normal;
+                  font-display: swap;
+            }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'CookieRun', Arial, sans-serif;
+  background-color:  #faf3e1;
+  color: #FFFFFF; 
+}
+
+.Container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #111827;
+}
+
+.contact-header h1 {
+  color: #111827;
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.contact-header p {
+  color: #111827;
+  font-size: 14px;
+}
+
+.contact-form {
+  margin-top: 20px;
+  padding: 25px 20px 30px;
+  background-color: #FFFFFF; 
+  border-radius: 16px;
+  border: 1px solid  #ff6e1f; 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #FFFFFF;        
+  opacity: 1;           
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.form-row input,
+.form-row textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 20px;
+  border: 1px solid #d1d5db; 
+  font-size: 14px;
+  color: #FFFFFF;
+  background-color:  #ff6e1f;
+}
+
+.form-row textarea {
+  border-radius: 12px;
+  resize: vertical;
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #111827; 
+  color: #FFFFFF;           
+  border: none;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'CookieRun', Arial, sans-serif;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.submit-btn:hover {
+  background-color: #EA580C; 
+  transform: translateY(-1px);
+}
+
+
+.logo-wrapper .logo-text {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  font-family: 'CookieRun', Arial, Helvetica, sans-serif;
+  font-size: 28px;
+  letter-spacing: 3px;
+  color: #F97316;
+}
+
+
+.social-links {
+  display: flex;
+  justify-content: center; 
+  gap: 30px;           
+}
+
+.social-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #111827;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+.social-icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.social-icon:hover {
+  transform: translateY(-1px);
+}
+
+.social-icon.instagram:hover {
+  background-color: #E1306C;
+}
+
+.social-icon.facebook:hover {
+  background-color: #1877F2;
+}
